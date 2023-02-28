@@ -10,21 +10,20 @@ Examples
         replace("ABCDE") === "!BCD!"
 */
 
-fun main() {
+private fun main() {
     println("H!! = ${replace("Hi!")}")
     println("!H!! H!! = ${replace("!Hi! Hi!")}")
     println("!!!!! = ${replace1("aeiou")}")
     println("!BCD! = ${replace2("ABCDE")}")
 }
 //----------------------------------------------------------------------------------------------------------------------
-const val vowel = "aeiouAEIOU"
-fun replace(s: String): String = s.map {
-    if (vowel.contains(it)) '!'
+private fun replace(s: String): String = s.map {
+    if ("aeiouAEIOU".contains(it)) '!'
     else it
 }.joinToString("")
 
 //----------------------------------------------------------------------------------------------------------------------
-fun replace1(s: String): String {
+private fun replace1(s: String): String {
     val vowel = "aeiouAEIOU"
     var result = ""
     for (i in s) {
@@ -35,4 +34,4 @@ fun replace1(s: String): String {
     return result
 }
 //----------------------------------------------------------------------------------------------------------------------
-fun replace2(s: String) = s.replace(Regex("[aeiouAEIOU]"), "!")
+private fun replace2(s: String) = s.replace(Regex("[aeiouAEIOU]"), "!")

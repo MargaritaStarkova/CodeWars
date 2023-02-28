@@ -8,14 +8,14 @@ Examples (input -> output)
         5, "Hello" -> "HelloHelloHelloHelloHello"
 */
 
-fun main() {
+private fun main() {
     println("aaaa = ${repeatStr(4, "a")}")
     println("HelloHelloHello = ${repeatStr(3, "a")}")
     println("  = ${repeatStr(5, "")}")
     println("  = ${repeatStr(0, "kata")}")
 }
 //----------------------------------------------------------------------------------------------------------------------
-fun repeatStr(r: Int, str: String) : String = str.repeat(r)
+private fun repeatStr(r: Int, str: String) : String = str.repeat(r)
 
 //----------------------------------------------------------------------------------------------------------------------
 

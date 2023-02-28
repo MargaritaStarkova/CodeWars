@@ -8,7 +8,7 @@ needed to honor a withdrawal of n dollars, with 1 <= n <= 1500.
 Return that number, or -1 if it is impossible.
 */
 
-fun main() {
+private fun main() {
 
     println(count(770)) // 4
     println(count1(1000)) // 2
@@ -17,7 +17,7 @@ fun main() {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-fun count(number: Int): Int = when {
+private fun count(number: Int): Int = when {
     number % 10 != 0 -> -1
     number - 500 >= 0 -> 1 + count(number - 500)
     number - 200 >= 0 -> 1 + count(number - 200)
@@ -30,12 +30,12 @@ fun count(number: Int): Int = when {
 
 //----------------------------------------------------------------------------------------------------------------------
 val values = listOf(500, 200, 100, 50, 20, 10)
-fun count1(amount: Int): Int {
+private fun count1(amount: Int): Int {
     val (a, k) = values.fold(Pair(amount, 0)){ (a, k), v -> Pair(a % v, k + a / v) }
     return if (a == 0) k else -1
 }
 //----------------------------------------------------------------------------------------------------------------------
-fun count2(amount: Int): Int {
+private fun count2(amount: Int): Int {
     val nominals = intArrayOf(500, 200, 100, 50, 20, 10)
     var remainingAmount = amount
     var count = 0

@@ -1,24 +1,24 @@
 package level_8kyu.fundamentals
 
 /*
-Write a program that finds the summation of every number from 1 to num.
-The number will always be a positive integer greater than 0.
-For example (Input -> Output):
-        2 -> 3 (1 + 2)
-        8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+Very simple, given an integer or a floating-point number, find its opposite.
+Examples:
+
+        1: -1
+        14: -14
+        -34: 34
 */
 
 private fun main() {
-    println("1 = ${summation(1)}")
-    println("36 = ${summation2(8)}")
+    println("1 = ${opposite(-1)}")
+    println("0 = ${opposite(0)}")
+    println("-20 = ${opposite(20)}")
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-private fun summation(n: Int): Int = if (n > 0) n + summation(n - 1) else 0
-
+private fun opposite(number: Int) = -number
 
 //----------------------------------------------------------------------------------------------------------------------
-private fun summation2(n: Int) = (1..n).sum()
 //----------------------------------------------------------------------------------------------------------------------
 
 

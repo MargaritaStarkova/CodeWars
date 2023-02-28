@@ -18,14 +18,14 @@ Dog Years
         +5 dog years for each year after that
 */
 
-fun main() {
+private fun main() {
     println("${arrayOf(1, 15, 15).contentToString()} = ${calculateYears(1).contentToString()}")
     println("${arrayOf(2, 24, 24).contentToString()} = ${calculateYears(2).contentToString()}")
     println("${arrayOf(10, 56, 64).contentToString()} = ${calculateYears(10).contentToString()}")
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-fun calculateYears(years: Int) = when (years) {
+private fun calculateYears(years: Int) = when (years) {
     1 -> arrayOf(years, 15, 15)
     2 -> arrayOf(years, 15 + 9, 15 + 9)
     else -> arrayOf(years, 15 + 9 + ((years - 2) * 4), 15 + 9 + ((years - 2) * 5))

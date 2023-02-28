@@ -20,12 +20,12 @@ Example
         ...until you find the first n in the list below.
 */
 
-fun main() {
+private fun main() {
     println("apple = ${subtractSum(10)}")
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-fun subtractSum(n: Int): String = when (n - n.toString().sumOf { it - '0' }) {
+private fun subtractSum(n: Int): String = when (n - n.toString().sumOf { it - '0' }) {
     1 -> "kiwi"
     2 -> "pear"
     3 -> "kiwi"
