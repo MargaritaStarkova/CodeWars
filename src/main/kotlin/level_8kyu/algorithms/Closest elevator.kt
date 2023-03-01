@@ -32,7 +32,7 @@ private fun main() {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-fun elevator(left: Int, right: Int, call: Int) =
+private fun elevator(left: Int, right: Int, call: Int) =
     if (abs(call - left) < abs(call - right)) "left"
     else "right"
 //----------------------------------------------------------------------------------------------------------------------
