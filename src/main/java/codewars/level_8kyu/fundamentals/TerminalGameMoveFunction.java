@@ -1,4 +1,4 @@
-package level_8kyu.fundamentals;
+package codewars.level_8kyu.fundamentals;
 /*
 Terminal game move function
 In this game, the hero moves from left to right.

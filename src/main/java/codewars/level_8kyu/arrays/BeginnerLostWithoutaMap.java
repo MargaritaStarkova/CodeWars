@@ -1,4 +1,4 @@
-package level_8kyu.arrays;
+package codewars.level_8kyu.arrays;
 
 import java.util.Arrays;
 

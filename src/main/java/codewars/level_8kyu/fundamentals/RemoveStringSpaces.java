@@ -1,4 +1,4 @@
-package level_8kyu.fundamentals;
+package codewars.level_8kyu.fundamentals;
 
 /*
 Write a function that removes the spaces from the string, then return the resultant string.

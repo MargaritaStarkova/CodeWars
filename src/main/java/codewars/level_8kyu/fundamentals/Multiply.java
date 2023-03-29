@@ -1,4 +1,4 @@
-package level_8kyu.fundamentals;
+package codewars.level_8kyu.fundamentals;
 /*
 This code does not execute properly. Try to figure out why.
     public class Multiply {
