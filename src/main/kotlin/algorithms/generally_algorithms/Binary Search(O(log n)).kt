@@ -1,13 +1,13 @@
 package algorithms.generally_algorithms
 
-fun main() {
+private fun main() {
 
     val item = 55
     println(binarySearch(arrayOf(20, 31, 33, 46, 47, 50, 51, 55, 57, 59, 60, 69, 70, 78, 101), item))
 
 }
 
-fun binarySearch(list: Array<Int>, item: Int): Int? {
+private fun binarySearch(list: Array<Int>, item: Int): Int? {
 
     //в переменных low и high хранятся границы той части списка, в которой выполняется поиск
     var low = 0
@@ -30,3 +30,5 @@ fun binarySearch(list: Array<Int>, item: Int): Int? {
     //возвращаем null, если в массиве нет такого элемента
     return null
 }
+
+
