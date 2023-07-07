@@ -1,18 +1,22 @@
 package algorithms.tinkoff_tests
 
-class BankAccount(
-    var balance: Int
-) {
+fun main() {
 
-    fun deposit(amount: Int) {
-        synchronized(this) {
-            balance += amount
-        }
+    var x = 10
+    var y = 10L
+
+    result(19.06540000000)
+}
+
+fun result(d: Double) {
+
+    if (d == d.toInt().toDouble()) {
+
+        println("%03d".format(d.toInt()))
+    } else {
+
+        val x = "%.6f".format(d)
+        println(x.trimEnd('0'))
+
     }
-
-    @Synchronized
-    fun withdraw(amount: Int) {
-        balance -= amount
-    }
-
 }
