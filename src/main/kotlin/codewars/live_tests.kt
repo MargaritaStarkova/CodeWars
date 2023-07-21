@@ -24,3 +24,7 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
 
     return result
 }
+
+private fun origin(s: String): String {
+    return ""
+}
