@@ -45,7 +45,25 @@ private fun twoSum(nums: IntArray, target: Int): IntArray { //Time complexity: O
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-private fun twoSum1(nums: IntArray, target: Int): IntArray { //Time complexity: O(n) Space complexity: O(n)
+private fun twoSum1(nums: IntArray, target: Int): IntArray {
+
+    var result = intArrayOf(0,0)
+
+    loop@ for (i in 0..nums.lastIndex) {
+        for (j in i + 1..nums.lastIndex) {
+            val compl = target - nums[i]
+            if (nums[j] == compl) {
+                result = intArrayOf(i, j)
+                break@loop
+            }
+        }
+    }
+
+    return result
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+private fun twoSum2(nums: IntArray, target: Int): IntArray { //Time complexity: O(n) Space complexity: O(n)
 //Runtime 183 ms, Memory 37.3 MB
     val map = HashMap<Int, Int>()
     for (i in nums.indices) { //1: {3=0}, 2: {3=1}
@@ -59,7 +77,7 @@ private fun twoSum1(nums: IntArray, target: Int): IntArray { //Time complexity: 
     return intArrayOf(0)
 }
 //----------------------------------------------------------------------------------------------------------------------
-private fun twoSum2(nums: IntArray, target: Int): IntArray { //Time complexity: O(n) Space complexity: O(n)
+private fun twoSum3(nums: IntArray, target: Int): IntArray { //Time complexity: O(n) Space complexity: O(n)
 //Runtime 197 ms, Memory 37.8 MB
     val map = HashMap<Int, Int>()
     for (i in nums.indices) { //i = 1

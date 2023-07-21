@@ -23,7 +23,7 @@ private fun main() {
 
 //----------------------------------------------------------------------------------------------------------------------
 
-fun removeDuplicates(nums: IntArray): Int {
+private fun removeDuplicates(nums: IntArray): Int {
     var cursor = 0
     var index = 0
     var k = 0
@@ -49,7 +49,7 @@ fun removeDuplicates(nums: IntArray): Int {
 
 
 //----------------------------------------------------------------------------------------------------------------------
-fun removeDuplicates1(nums: IntArray): Int {
+private fun removeDuplicates1(nums: IntArray): Int {
 
     nums.distinct().let {
         it.forEachIndexed { index, i ->
@@ -58,6 +58,5 @@ fun removeDuplicates1(nums: IntArray): Int {
         return it.size
     }
 }
-
 //----------------------------------------------------------------------------------------------------------------------
 
