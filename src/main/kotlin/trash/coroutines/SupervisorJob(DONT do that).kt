@@ -15,8 +15,6 @@ private suspend fun main(): Unit = runBlocking {
         delay(2000)
         println("Will be printed")
     }
-    //ddddddddddddddddddddddd
-    //ddddddddddddddddddddddddd
     delay(3000)
 }
 
