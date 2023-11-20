@@ -22,6 +22,6 @@ private suspend fun getUserOrNull(): User? =
 
 private suspend fun main(): Unit = coroutineScope {
     val user = getUserOrNull()
-   // println("User: $user")
+    println("User: $user")
 }
 
