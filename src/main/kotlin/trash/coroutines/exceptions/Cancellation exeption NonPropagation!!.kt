@@ -1,8 +1,6 @@
-package trash.coroutines
+package trash.coroutines.exceptions
 
 import kotlinx.coroutines.*
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 object MyNonPropagationException : CancellationException()
 

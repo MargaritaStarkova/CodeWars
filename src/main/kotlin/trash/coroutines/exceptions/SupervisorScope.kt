@@ -1,4 +1,4 @@
-package trash.coroutines
+package trash.coroutines.exceptions
 
 import kotlinx.coroutines.*
 import java.lang.Error

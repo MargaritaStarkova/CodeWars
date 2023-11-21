@@ -1,9 +1,6 @@
-package trash.coroutines
+package trash.coroutines.exceptions
 
 import kotlinx.coroutines.*
-import java.lang.Error
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 class MyException : Throwable()
 private suspend fun main(): Unit = supervisorScope {

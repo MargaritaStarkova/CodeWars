@@ -1,23 +1,20 @@
-package trash.coroutines
+package trash.coroutines.exceptions
 
 import kotlinx.coroutines.*
 import java.lang.Error
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 private suspend fun main(): Unit = runBlocking {
-    val scope = CoroutineScope(SupervisorJob())
-
-    scope.launch {
+    //Don't do that, SupervisorJob with one child
+    // and no parent works similar to just Job
+    launch(SupervisorJob()) {
         delay(1000)
         throw Error("Some error")
     }
 
-    scope.launch {
+    launch {
         delay(2000)
         println("Will be printed")
     }
-
     delay(3000)
 }
 

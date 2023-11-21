@@ -1,4 +1,4 @@
-package trash.coroutines
+package trash.coroutines.structured_cuncurency
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay

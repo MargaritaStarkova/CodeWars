@@ -1,9 +1,6 @@
-package trash.coroutines
+package trash.coroutines.structured_cuncurency
 
 import kotlinx.coroutines.*
-import java.lang.Error
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 data class User(
     val name: String,

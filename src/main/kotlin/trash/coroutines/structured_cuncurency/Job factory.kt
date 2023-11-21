@@ -1,8 +1,6 @@
-package trash.coroutines
+package trash.coroutines.structured_cuncurency
 
 import kotlinx.coroutines.*
-import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 private suspend fun main(): Unit = coroutineScope {
     val job = Job()

@@ -1,4 +1,4 @@
-package trash.coroutines
+package trash.coroutines.context
 
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext

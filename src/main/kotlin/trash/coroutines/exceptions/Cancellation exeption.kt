@@ -1,4 +1,4 @@
-package trash.coroutines
+package trash.coroutines.exceptions
 
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
@@ -12,17 +12,14 @@ private suspend fun main(): Unit = coroutineScope {
                 delay(200)
                 println("Printing $i")
             }
-        } finally {
-            println("Finally")
-            withContext(NonCancellable) {
-                delay(1000L)
-                println("Cleanup done")
-            }
+        } catch (e: CancellationException) {
+            println(e)
+            throw e
         }
     }
 
     delay(1100)
     job.cancelAndJoin()
-    println("Done")
+    println("Cancelled successfully")
     delay(1000)
 }
