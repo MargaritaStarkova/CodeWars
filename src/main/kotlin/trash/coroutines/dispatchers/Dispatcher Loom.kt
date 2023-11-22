@@ -6,7 +6,9 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 
 object LoomDispatcher : ExecutorCoroutineDispatcher() {
-    override val executor: Executor = Executor { command -> Thread.startVirtualThread(command) }
+    override val executor: Executor = Executor { command ->
+       // Thread.startVirtualThread(command)
+    }
 
     override fun close() {
         error("Cannot be invoked on Dispatchers.LOOM")
