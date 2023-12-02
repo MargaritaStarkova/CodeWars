@@ -1,4 +1,4 @@
-package trash.coroutines.flow
+package trash.coroutines.flow.operators
 
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay

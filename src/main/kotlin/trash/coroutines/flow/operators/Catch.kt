@@ -1,9 +1,6 @@
-package trash.coroutines.flow
+package trash.coroutines.flow.operators
 
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
-import kotlinx.coroutines.launch
 
 private class MyError : Throwable("My Error")
 
